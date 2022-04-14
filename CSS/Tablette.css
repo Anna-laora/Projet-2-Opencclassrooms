@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*
+{
+box-sizing: border-box;
+}
+
+/*Pour tabelette*/
+
+@media (max-width: 668px) 
+{
+
+    /*naviation*/
+
+    nav ul
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    nav li
+    {
+        padding: 32px;
+        margin-top: -73px;
+    }
+
+    nav a
+    {
+        font-size: 17px;
+        padding-top: 96px;
+    }
+
+   
+
+/*barre de rechercher*/
+
+    form
+    {
+        width: max-content;
+    }
+
+    #loupe 
+    {
+        display: none;
+    }
+
+/*Filtres*/
+
+    .filtres
+    {
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+  
+
+/*Infromations*/
+
+.Informations
+{
+    display: flex;
+    align-items: center;
+    margin: 16px 0px 0px;
+}
+.Informationsicone
+{
+    height: 32px;
+    width: 32px;
+    min-height: 32px;
+    min-width: 32px;
+    border: solid 1px #deebff;
+    border-radius: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    color: #0065FC;
+    font-weight: bold;
+}
+
+.ActivtésMarseille
+{
+    margin-right: 0px;
+}
+}
+
+@media (max-width: 1440px) 
+{
+
+    /*Card Hebergements Marseille*/
+
+    .HebergementsCartes
+    {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    
+    }
+
+    .hostingMain
+    {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .hostingMain
+    {
+        width: 1325px;
+       
+    }
+
+    .cardBody
+    {
+        width: 404px;
+        height: 208px;
+    }
+    .cardImg
+    {
+        width: 394px;
+        height: 112px;
+    }
+
+    /*Les plus populaires*/
+
+    .HebergementsPopulairesClass
+    {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto 10rem;
+        column-gap: 2rem;
+        grid-row-start: 1;
+        width: 1325px;
+       
+    
+    }
+
+    .LiensCartes
+    {
+        grid-column: 1/-1;
+    }
+
+    .HebergementsPopulairesTitre
+    {
+        margin-bottom: 0px;
+    }
+    .HebergementsTitre 
+    {
+    width: 190px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    }
+
+    .CardPrix2
+    {
+        margin-left: 20px;
+    }
+
+    .notes 
+    {
+        
+        margin-top: 60px;
+        
+    }
+
+    /*Activités Marseille*/
+
+    .ActivitésMarseille
+    {
+        margin-right: 0px;
+        
+        width: max-content;
+    }
+
+}
