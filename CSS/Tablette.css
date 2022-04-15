@@ -1,172 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
-*
-{
-box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 /*Pour tabelette*/
 
-@media (max-width: 668px) 
-{
+@media (max-width: 668px) {
+  /*naviation*/
 
-    /*naviation*/
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 
-    nav ul
-    {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
+  nav li {
+    padding: 32px;
+    margin-top: -73px;
+  }
 
-    nav li
-    {
-        padding: 32px;
-        margin-top: -73px;
-    }
+  nav a {
+    font-size: 17px;
+    padding-top: 96px;
+  }
 
-    nav a
-    {
-        font-size: 17px;
-        padding-top: 96px;
-    }
+  /*barre de rechercher*/
 
-   
+  form {
+    width: max-content;
+  }
 
-/*barre de rechercher*/
+  #loupe {
+    display: none;
+  }
 
-    form
-    {
-        width: max-content;
-    }
+  /*Filtres*/
 
-    #loupe 
-    {
-        display: none;
-    }
+  .filtres {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-/*Filtres*/
+  /*Infromations*/
 
-    .filtres
-    {
-        display: flex;
-        flex-wrap: wrap;
-    
-    }
-  
-
-/*Infromations*/
-
-.Informations
-{
+  .informations {
     display: flex;
     align-items: center;
     margin: 16px 0px 0px;
-}
-.Informationsicone
-{
+  }
+  .informationsicone {
     height: 32px;
     width: 32px;
     min-height: 32px;
     min-width: 32px;
     border: solid 1px #deebff;
-    border-radius: 100%; 
+    border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 16px;
-    color: #0065FC;
+    color: #0065fc;
     font-weight: bold;
-}
+  }
 
-.ActivtésMarseille
-{
+  .activtesmarseille {
     margin-right: 0px;
+  }
 }
-}
 
-@media (max-width: 1440px) 
-{
+@media (max-width: 1440px) {
+  /*Card Hebergements Marseille*/
 
-    /*Card Hebergements Marseille*/
+  .hebergementscartes {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
 
-    .HebergementsCartes
-    {
-        grid-template-columns: 1fr;
-        row-gap: 2rem;
-    
-    }
+  .hostingmain {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    .hostingMain
-    {
-        grid-template-columns: repeat(3,1fr);
-    }
+  .hostingmain {
+    width: 1325px;
+  }
 
-    .hostingMain
-    {
-        width: 1325px;
-       
-    }
+  .cardbody {
+    width: 404px;
+    height: 208px;
+  }
+  .cardimg {
+    width: 394px;
+    height: 112px;
+  }
 
-    .cardBody
-    {
-        width: 404px;
-        height: 208px;
-    }
-    .cardImg
-    {
-        width: 394px;
-        height: 112px;
-    }
+  /*Les plus populaires*/
 
-    /*Les plus populaires*/
+  .hebergementspopulairesclass {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 10rem;
+    column-gap: 2rem;
+    grid-row-start: 1;
+    width: 1325px;
+  }
 
-    .HebergementsPopulairesClass
-    {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto 10rem;
-        column-gap: 2rem;
-        grid-row-start: 1;
-        width: 1325px;
-       
-    
-    }
+  .lienscartes {
+    grid-column: 1/-1;
+  }
 
-    .LiensCartes
-    {
-        grid-column: 1/-1;
-    }
-
-    .HebergementsPopulairesTitre
-    {
-        margin-bottom: 0px;
-    }
-    .HebergementsTitre 
-    {
+  .hebergementspopulairestitre {
+    margin-bottom: 0px;
+  }
+  .hebergementstitre {
     width: 190px;
     margin-left: 20px;
     margin-bottom: 0px;
-    }
+  }
 
-    .CardPrix2
-    {
-        margin-left: 20px;
-    }
+  .cardprix2 {
+    margin-left: 20px;
+  }
 
-    .notes 
-    {
-        
-        margin-top: 60px;
-        
-    }
+  .notes {
+    margin-top: 60px;
+  }
 
-    /*Activités Marseille*/
+  /*Activités Marseille*/
 
-    .ActivitésMarseille
-    {
-        margin-right: 0px;
-        
-        width: max-content;
-    }
+  .activitesmarseille {
+    margin-right: 0px;
 
+    width: max-content;
+  }
 }
