@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  width: 100%;
+}
+
 body {
   font-family: "Raleway";
   color: #0a0a0a;
@@ -353,15 +357,12 @@ div {
   grid-template-rows: auto 224px 32px 32px 32px 224px;
   display: grid;
   column-gap: 32px;
-  margin: 64px 0px;
-  margin-right: 325px;
-  width: 86%;
+  margin: 64px 0;
+  width: 1475px;
 }
 
 .activitesTitre {
   grid-column: 1/-1;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .cartesActivites {
@@ -405,7 +406,7 @@ div {
 
 .cartesActivites4 {
   grid-column: 4/5;
-  grid-row: 2/3;
+  grid-row: 2/4;
 }
 
 .cartesActivites5 {
@@ -415,7 +416,7 @@ div {
 
 .cartesActivites6 {
   grid-column: 4/5;
-  grid-row: 4/7;
+  grid-row: 5/7;
 }
 
 /*Pied de page*/
