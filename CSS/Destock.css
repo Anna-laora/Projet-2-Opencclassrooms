@@ -144,7 +144,7 @@ form {
   align-items: center;
   margin: 16px 0px 32px 0px;
 }
-.informationsicone {
+.informationsIcone {
   height: 32px;
   width: 32px;
   min-height: 32px;
@@ -161,7 +161,7 @@ form {
 
 /*Carte Heberments MArseille*/
 
-.hebergementscartes {
+.hebergementsCartes {
   display: grid;
   column-gap: 30px;
   grid-template-columns: 6fr 3fr;
@@ -170,21 +170,21 @@ form {
   margin-right: 150px;
 }
 
-.hostingmain {
+.hostingMain {
   grid-template-columns: repeat(3, 1fr);
   display: grid;
   column-gap: 30px;
   row-gap: 33px;
 }
 
-.hostingmain {
+.hostingMain {
   background-color: #f2f2f2;
   width: max-content;
   border-radius: 24px;
   padding: 32px;
 }
 
-.cardheader {
+.cardHeader {
   display: block;
   grid-column: 1/-1;
   padding-top: 0px;
@@ -200,7 +200,7 @@ h2 {
   font-weight: bold;
 }
 
-.cardbody {
+.cardBody {
   background-color: white;
   padding: 6px;
   border-radius: 20px;
@@ -211,7 +211,7 @@ h2 {
   height: 202px;
 }
 
-.cardbodyfigure {
+.cardBodyfigure {
   margin: 0;
 }
 
@@ -223,7 +223,7 @@ figure {
   margin-inline-end: 40px;
 }
 
-.cardimg {
+.cardImg {
   height: 112px;
   object-fit: cover;
   max-width: 100%;
@@ -240,12 +240,12 @@ figcaption {
   display: block;
 }
 
-.cardtitle {
+.cardTitle {
   margin-top: 5px;
   margin-left: 15px;
 }
 
-.cardprix {
+.cardPrix {
   margin-top: -10px;
   margin-left: 15px;
 }
@@ -275,7 +275,7 @@ div {
   color: #0065fc;
 }
 
-.cardvoirplus {
+.cardVoirPlus {
   font-weight: bold;
 }
 
@@ -292,7 +292,7 @@ div {
   margin-right: 190px;
 }
 
-.hebergementsPopulairestitre {
+.hebergementsPopulairesTitre {
   margin: 0px;
   margin-bottom: 30px;
   display: flex;
@@ -307,14 +307,14 @@ div {
   box-sizing: border-box;
 }
 
-.hebergementsPopulairesliens {
+.hebergementsPopulairesLiens {
   display: flex;
   align-items: stretch;
   height: 100%;
   overflow: auto;
 }
 
-.hebergementsPopulairesliensdiv {
+.hebergementsPopulairesLiensDiv {
   position: relative;
   min-height: 100%;
   width: 33%;
@@ -322,7 +322,7 @@ div {
   max-width: 33%;
 }
 
-.hebergementsPopulairesimg {
+.hebergementsPopulairesImg {
   border-radius: 16px 0 0 16px;
   position: absolute;
   width: 130px;
@@ -330,14 +330,14 @@ div {
   object-fit: cover;
 }
 
-.hebergementstitre {
+.hebergementsTitre {
   font-weight: bold;
   width: max-content;
   margin-top: 3px;
   margin-bottom: 0px;
 }
 
-.cardprix2 {
+.cardPrix2 {
   width: max-content;
   margin-top: 3px;
 }
@@ -348,7 +348,7 @@ div {
 
 /*Activites Marseille*/
 
-.activitesmarseille {
+.activitesMarseille {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto 224px 32px 32px 32px 224px;
   display: grid;
@@ -358,13 +358,13 @@ div {
   width: 86%;
 }
 
-.activitestitre {
+.activitesTitre {
   grid-column: 1/-1;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.cartesactivites {
+.cartesActivites {
   box-shadow: 0 0 20px #0000002e;
   border-radius: 16px;
   overflow: hidden;
@@ -372,48 +372,48 @@ div {
   flex-direction: column;
 }
 
-.cartesactivites1 {
+.cartesActivites1 {
   grid-row: 2/7;
   grid-column: 1/2;
 }
 
-.cartesactivitesdiv {
+.cartesActivitesDiv {
   position: relative;
   flex: 1;
 }
 
-.cartesactivitesimg {
+.cartesActivitesImg {
   position: absolute;
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.cartesactivitestitre {
+.cartesActivitesTitre {
   margin: 19px 24px;
 }
 
-.cartesactivites2 {
+.cartesActivites2 {
   grid-column: 2/3;
   grid-row: 2/5;
 }
 
-.cartesactivites3 {
+.cartesActivites3 {
   grid-column: 3/4;
   grid-row: 2/7;
 }
 
-.cartesactivites4 {
+.cartesActivites4 {
   grid-column: 4/5;
   grid-row: 2/3;
 }
 
-.cartesactivites5 {
+.cartesActivites5 {
   grid-column: 2/3;
   grid-row: 6/7;
 }
 
-.cartesactivites6 {
+.cartesActivites6 {
   grid-column: 4/5;
   grid-row: 4/7;
 }
@@ -423,11 +423,26 @@ div {
 footer {
   background-color: #f2f2f2;
   width: auto;
-  height: 228px;
-  margin-bottom: -15px;
+  height: 263px;
   margin-left: -100px;
 }
 footer ul {
   display: flex;
   flex-direction: column;
+  margin-left: 100px;
+  margin-right: 150px;
+  margin-bottom: 86px;
+}
+
+#footerNav {
+  display: flex;
+}
+
+footer li {
+  margin-top: 21px;
+}
+
+.titre1 {
+  font-weight: bold;
+  font-size: 19px;
 }
