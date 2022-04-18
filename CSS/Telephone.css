@@ -6,7 +6,11 @@
 
 /*pour Télephone*/
 
-@media all and (max-width: 667px) and (min-width: 200px) {
+@media all and (max-width: 767px) {
+  html {
+    width: fit-content;
+  }
+
   /*logo*/
 
   .logo {
@@ -18,9 +22,14 @@
 
   /*navigation*/
 
+  nav {
+    width: 50px;
+  }
+
   nav ul {
     display: flex;
-    text-align: center;
+    width: 1000px;
+    margin-left: -350px;
   }
 
   nav li {
@@ -39,23 +48,18 @@
     font-size: 17px;
   }
 
-  .color {
-    color: #0065fc;
-  }
-
-  .BordureBleu {
-    border-bottom: #0065fc solid 3px;
-    width: 455px;
-    margin-left: -40px;
-  }
-
-  .BordureBlanc {
-    border-bottom: solid 3px #f2f2f2;
-    width: 455px;
-  }
-
-  header {
+  .header {
     width: 780px;
+  }
+
+  .teteNav {
+    margin-top: 100px;
+    border-bottom: 3px solid #f2f2f2;
+    width: 50%;
+  }
+
+  .teteNav[data-active="true"] {
+    border-bottom: #0065fc 3px solid;
   }
 
   /*titre 1*/
@@ -107,45 +111,51 @@
 
   /* Card Hebergements Marseille*/
 
-  .hebergementscartes {
+  .hebergementsCartes {
     grid-template-columns: 1fr;
-    row-gap: 2rem;
+    row-gap: 50px;
+    margin-right: 0;
   }
 
-  .hostingmain {
-    grid-template-columns: 1fr;
-    width: 830px;
+  .hostingMain {
+    grid-template-columns: 1fr 2fr;
+    width: 1200px;
+    column-gap: 180px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   #hebergements {
-    width: 350px;
+    width: 550px;
   }
 
-  .cardbody {
-    width: 765px;
+  .cardBody {
+    width: 400px;
   }
 
-  .cardimg {
+  .cardImg {
     width: 760px;
     object-fit: cover;
   }
   /*Les plus Populaires*/
 
-  .hebergementspopulairesclass {
+  .hebergementsPopulairesclass {
     grid-template-columns: 1fr;
     grid-template-rows: auto repeat(3, 9rem);
+    grid-row-start: 1;
+    padding: 32px 100px 32px 100px;
+    margin: 0;
   }
 
-  .hebergementspopulairesclass {
-    width: 830px;
+  .hebergementsPopulairesclass {
+    width: 1200px;
   }
 
-  .hebergementstitre {
-    width: max-content;
-    margin-left: -100px;
+  .hebergementsPopulairesTitre {
+    margin-top: 20px;
   }
 
-  .cardprix2 {
+  .cardPrix2 {
     margin-left: -100px;
   }
 
@@ -156,7 +166,33 @@
 
   /*Activité Marseille*/
 
-  .activitesmarseille {
-    grid-template-columns: 1fr;
+  .activitesMarseille {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .activitesTitre {
+    margin-bottom: 20px;
+  }
+
+  .cartesActivites {
+    width: 830px;
+    margin-bottom: 50px;
+  }
+
+  .cartesActivitesImg {
+    position: relative;
+    height: 100px;
+  }
+
+  /*Pied de page*/
+
+  footer {
+    height: auto;
+    width: 100px;
+  }
+
+  #footerNav {
+    flex-direction: column;
   }
 }
