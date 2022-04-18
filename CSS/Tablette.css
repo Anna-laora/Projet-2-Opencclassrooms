@@ -6,7 +6,7 @@
 
 /*Pour tabelette*/
 
-@media (max-width: 668px) {
+@media (min-width: 768px) and (max-width: 1440px) {
   /*naviation*/
 
   nav ul {
@@ -49,7 +49,7 @@
     align-items: center;
     margin: 16px 0px 0px;
   }
-  .informationsicone {
+  .informationsIcone {
     height: 32px;
     width: 32px;
     min-height: 32px;
@@ -64,72 +64,70 @@
     font-weight: bold;
   }
 
-  .activtesmarseille {
-    margin-right: 0px;
-  }
-}
-
-@media (max-width: 1440px) {
   /*Card Hebergements Marseille*/
 
-  .hebergementscartes {
+  .hebergementsCartes {
     grid-template-columns: 1fr;
     row-gap: 2rem;
+    display: grid;
   }
 
-  .hostingmain {
+  .hostingMain {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .hostingmain {
-    width: 1325px;
-  }
-
-  .cardbody {
-    width: 404px;
-    height: 208px;
-  }
-  .cardimg {
-    width: 394px;
-    height: 112px;
+    width: auto;
   }
 
   /*Les plus populaires*/
 
-  .hebergementspopulairesclass {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto 10rem;
-    column-gap: 2rem;
+  .hebergementsPopulairesclass {
+    column-gap: 32px;
     grid-row-start: 1;
-    width: 1325px;
+    margin-right: 0px;
+    width: auto;
   }
 
-  .lienscartes {
+  .hebergementsPopulairesLiens {
+    height: 170px;
+  }
+
+  .liensCartes {
     grid-column: 1/-1;
   }
 
-  .hebergementspopulairestitre {
-    margin-bottom: 0px;
+  .hebergementsPopulairesImg {
+    width: 200px;
   }
-  .hebergementstitre {
-    width: 190px;
-    margin-left: 20px;
+
+  .hebergementsPopulairesTitre {
     margin-bottom: 0px;
   }
 
-  .cardprix2 {
+  .hebergementsTitre {
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  .cardPrix2 {
     margin-left: 20px;
   }
 
   .notes {
-    margin-top: 60px;
+    margin-top: 80px;
+    margin-left: 20px;
   }
 
-  /*Activités Marseille*/
+  /*Activites Marseille*/
 
-  .activitesmarseille {
+  .activitesMarseille {
+    width: auto;
+    margin-right: 120px;
+  }
+
+  /*Pied de page*/
+
+  footer ul {
+    justify-content: space-around;
     margin-right: 0px;
-
-    width: max-content;
   }
 }
