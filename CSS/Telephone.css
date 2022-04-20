@@ -11,13 +11,16 @@
     width: fit-content;
   }
 
+  body {
+    width: fit-content;
+  }
   /*logo*/
 
   .logo {
     display: flex;
-    margin-left: 300px;
-    width: 150px;
-    height: 68px;
+    justify-content: center;
+    margin-left: 490px;
+    height: 100px;
   }
 
   /*navigation*/
@@ -28,59 +31,69 @@
 
   nav ul {
     display: flex;
-    width: 1000px;
-    margin-left: -350px;
+    width: 2000px;
+    margin-left: -790px;
   }
 
   nav li {
-    padding-left: 35px;
     padding-top: 35px;
-    padding-right: 35px;
     padding-bottom: 28px;
-    width: 50%;
   }
 
   nav a {
     font-size: 17px;
-  }
-
-  nav a {
-    font-size: 17px;
-  }
-
-  .header {
-    width: 780px;
+    width: 575px;
+    padding-right: 0;
+    font-size: 35px;
   }
 
   .teteNav {
     margin-top: 100px;
     border-bottom: 3px solid #f2f2f2;
-    width: 50%;
+    padding-left: 250px;
+    width: 713px;
   }
 
   .teteNav[data-active="true"] {
     border-bottom: #0065fc 3px solid;
+    color: #0065fc;
+    padding-left: 250px;
+    width: 713px;
   }
 
   /*titre 1*/
 
   h1 {
-    width: 760px;
+    width: 1200px;
+    font-size: 45px;
   }
 
-  p {
-    width: 750px;
+  .paragex {
+    width: 1200px;
+    font-size: 30px;
+    margin-bottom: 50px;
   }
 
   /*barre de rechercher*/
 
   form {
-    width: 488px;
+    width: 1045px;
+    height: 100px;
+    border-radius: 30px;
+    margin-bottom: 35px;
+  }
+  #localisation {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
   }
 
   #barre_recherche {
-    width: 360px;
-    height: 56px;
+    margin-left: 35px;
+    width: 840px;
+    height: 99px;
+    font-size: 35px;
   }
 
   .bouton {
@@ -89,24 +102,38 @@
 
   #loupe {
     border: 0px;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 35px;
+    font-weight: bold;
     color: white;
     background-color: #0065fc;
     margin-left: -10px;
-    padding-top: 21px;
-    padding-bottom: 21px;
-    padding-right: 36px;
-    padding-left: 23px;
+    padding-top: 40px;
+    padding-bottom: 36px;
+    padding-right: 64px;
+    padding-left: 41px;
+    width: 94px;
+    font-size: 25px;
+    visibility: visible;
   }
 
   /*Filtres*/
 
-  .filtres {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 30px;
-    width: 568px;
+  #filtres {
+    width: 1000px;
+    font-size: 25px;
+  }
+
+  h4 {
+    font-size: 30px;
+  }
+  /*informations*/
+
+  .informations {
+    font-size: 28px;
+  }
+
+  .informationsIcone {
+    font-size: 30px;
   }
 
   /* Card Hebergements Marseille*/
@@ -115,27 +142,36 @@
     grid-template-columns: 1fr;
     row-gap: 50px;
     margin-right: 0;
+    width: 1300px;
   }
 
   .hostingMain {
     grid-template-columns: 1fr 2fr;
-    width: 1200px;
-    column-gap: 180px;
+    width: 1250px;
+    column-gap: 150px;
     padding-left: 100px;
     padding-right: 100px;
   }
 
   #hebergements {
-    width: 550px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 40px;
   }
 
   .cardBody {
-    width: 400px;
+    width: 450px;
+    height: 250px;
+    font-size: 25px;
   }
 
   .cardImg {
     width: 760px;
     object-fit: cover;
+  }
+
+  .cardVoirPlus {
+    font-size: 28px;
   }
   /*Les plus Populaires*/
 
@@ -143,16 +179,24 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto repeat(3, 9rem);
     grid-row-start: 1;
+    row-gap: 50px;
     padding: 32px 100px 32px 100px;
     margin: 0;
   }
 
   .hebergementsPopulairesclass {
-    width: 1200px;
+    width: 1250px;
   }
 
   .hebergementsPopulairesTitre {
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 45px;
+  }
+
+  .hebergementsPopulaires {
+    font-size: 25px;
+    height: 160px;
   }
 
   .cardPrix2 {
@@ -160,39 +204,315 @@
   }
 
   .notes {
-    margin-top: 65px;
+    margin-top: 50px;
     margin-left: -100px;
   }
 
-  /*Activité Marseille*/
-
-  .activitesMarseille {
-    display: flex;
-    flex-direction: column;
-  }
+  /*activites marseille*/
 
   .activitesTitre {
-    margin-bottom: 20px;
+    font-size: 45px;
   }
 
-  .cartesActivites {
-    width: 830px;
-    margin-bottom: 50px;
-  }
-
-  .cartesActivitesImg {
-    position: relative;
-    height: 100px;
+  .cartesActivitesTitre {
+    font-size: 35px;
   }
 
   /*Pied de page*/
-
   footer {
-    height: auto;
-    width: 100px;
+    height: 700px;
+  }
+  .titre1 {
+    font-size: 45px;
+  }
+  footer li {
+    font-size: 35px;
   }
 
   #footerNav {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 650px) {
+  /*Activité marseille*/
+
+  .activitesMarseille {
+    row-gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    width: 1255px;
+    font-size: 25px;
+  }
+
+  .activitesTitre {
+    font-size: 40px;
+  }
+
+  .cartesActivites1 {
+    grid-column: 1/2;
+    grid-row: 2/11;
+  }
+
+  .cartesActivites2 {
+    grid-column: 2/2;
+    grid-row: 2/11;
+  }
+
+  .cartesActivites3 {
+    grid-column: 1/2;
+    grid-row: 11/20;
+  }
+
+  .cartesActivites4 {
+    grid-column: 2/2;
+    grid-row: 11/20;
+  }
+
+  .cartesActivites5 {
+    grid-column: 1/2;
+    grid-row: 20/30;
+  }
+
+  .cartesActivites6 {
+    grid-column: 2/2;
+    grid-row: 20/30;
+  }
+}
+
+@media (max-width: 649px) {
+  /*activites marseille*/
+
+  .activitesMarseille {
+    row-gap: 32px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 1300px;
+  }
+
+  .cartesActivites1 {
+    grid-column: 1/1;
+    grid-row: 2/11;
+  }
+
+  .cartesActivites2 {
+    grid-column: 1/1;
+    grid-row: 11/20;
+  }
+
+  .cartesActivites3 {
+    grid-column: 1/1;
+    grid-row: 20/29;
+  }
+
+  .cartesActivites4 {
+    grid-column: 1/1;
+    grid-row: 29/38;
+  }
+
+  .cartesActivites5 {
+    grid-column: 1/1;
+    grid-row: 38/48;
+  }
+
+  .cartesActivites6 {
+    grid-column: 1/1;
+    grid-row: 48/57;
+  }
+}
+
+@media (max-width: 354px) {
+  html {
+    width: 1000px;
+  }
+
+  body {
+    width: 1000px;
+    margin: 15px;
+  }
+
+  /*logo*/
+  .logo {
+    margin-right: 148px;
+    margin-left: 410px;
+  }
+
+  /*nav*/
+
+  nav {
+    width: 0;
+  }
+
+  nav ul {
+    width: 1100px;
+  }
+
+  .teteNav {
+    width: 600px;
+    padding-left: 150px;
+  }
+
+  .teteNav[data-active="true"] {
+    padding-left: 400px;
+  }
+
+  h1 {
+    font-size: 70px;
+    width: 900px;
+  }
+  .paragex {
+    font-size: 50px;
+    width: 900px;
+  }
+  /*main*/
+
+  main {
+    width: 1000px;
+    margin: 0;
+    padding-right: 25px;
+  }
+
+  /*barre de recherche*/
+
+  form {
+    height: 150px;
+  }
+
+  #localisation {
+    font-size: 40px;
+  }
+
+  #barre_recherche {
+    height: 147px;
+    width: 833px;
+  }
+
+  #loupe {
+    padding-bottom: 60px;
+    padding-top: 54px;
+    padding-left: 30px;
+    padding-right: 75px;
+    font-size: 40px;
+  }
+
+  /*filtres*/
+
+  h4 {
+    font-size: 45px;
+  }
+
+  #filtres {
+    width: 900px;
+    font-size: 45px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .espaceFiltres {
+    margin-bottom: 20px;
+  }
+
+  span {
+    font-size: 45px;
+  }
+
+  /*informations*/
+
+  .informations {
+    font-size: 45px;
+  }
+
+  .informationsIcone {
+    font-size: 45px;
+    border-radius: 50px;
+    border-color: #f2f2f2;
+    border-width: 50px;
+  }
+
+  /*cartes hebergments marseille*/
+
+  .hebergementsCartes {
+    width: 1000px;
+    row-gap: 10px;
+  }
+
+  .hostingMain {
+    width: 1000px;
+    grid-template-columns: 1fr;
+    background-color: white;
+    padding-left: 30px;
+  }
+
+  .cardBody {
+    width: 938px;
+    height: fit-content;
+    font-size: 30px;
+  }
+
+  .cardImg {
+    width: 995px;
+  }
+  .cardTitle {
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  /*plus populaires*/
+
+  .hebergementsPopulairesclass {
+    width: 1040px;
+    padding-bottom: 80px;
+    height: 800px;
+    row-gap: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .hebergementsPopulaires {
+    width: 950px;
+    height: fit-content;
+    font-size: 30px;
+  }
+
+  .cardPrix2 {
+    margin: 0;
+  }
+
+  .notes {
+    margin-left: 0;
+  }
+
+  .hebergementsPopulairesTitre {
+    margin-bottom: 0px;
+  }
+
+  /*activites marseille*/
+
+  .activitesMarseille {
+    width: 1000px;
+  }
+
+  .cartesActivites {
+    width: 1000px;
+  }
+
+  /*pied de page*/
+  footer {
+    width: 1167px;
+  }
+
+  #footerNav {
+    flex-direction: column;
+  }
+
+  .titre1 {
+    font-size: 50px;
+  }
+
+  footer li {
+    font-size: 40px;
   }
 }

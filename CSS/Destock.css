@@ -8,6 +8,7 @@ body {
   font-family: "Raleway";
   color: #0a0a0a;
   margin-left: 50px;
+  width: 1200px;
 }
 
 a {
@@ -73,8 +74,9 @@ main {
 form {
   padding-left: 20px;
   border-radius: 10px;
-  border: 1px solid #f2f2f2 10px;
+  border: 1px solid #f2f2f2;
   width: 425px;
+  height: 51px;
   background-color: #f2f2f2;
 }
 
@@ -88,7 +90,7 @@ form {
 }
 
 .bouton {
-  height: 51px;
+  height: 50px;
   width: 137px;
   margin-left: -10px;
   background-color: #276bf2;
@@ -98,7 +100,9 @@ form {
   border-bottom-right-radius: 10px;
   border: 0px;
 }
-
+#loupe {
+  visibility: hidden;
+}
 /*filtres*/
 #filtres {
   display: flex;
@@ -169,9 +173,9 @@ form {
   display: grid;
   column-gap: 30px;
   grid-template-columns: 6fr 3fr;
-
   margin-top: 20px;
   margin-right: 150px;
+  width: 1000px;
 }
 
 .hostingMain {
