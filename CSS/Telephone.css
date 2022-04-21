@@ -220,7 +220,7 @@
 
   /*Pied de page*/
   footer {
-    height: 700px;
+    height: 100%;
   }
   .titre1 {
     font-size: 45px;

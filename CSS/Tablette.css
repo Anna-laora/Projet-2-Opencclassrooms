@@ -23,16 +23,32 @@
   nav a {
     font-size: 17px;
     padding-top: 96px;
+    font-size: 25px;
+  }
+  /*header*/
+
+  h1 {
+    font-size: 45px;
   }
 
+  .paragex {
+    font-size: 35px;
+  }
   /*barre de rechercher*/
 
   form {
-    width: 482px;
+    width: 580px;
+    height: 70px;
   }
 
+  .bouton {
+    padding-bottom: 45px;
+    padding-top: 30px;
+  }
   #barre_recherche {
-    width: 292px;
+    width: 390px;
+    height: 70px;
+    font-size: 25px;
   }
 
   #loupe {
@@ -41,9 +57,8 @@
 
   /*Filtres*/
 
-  .filtres {
-    display: flex;
-    flex-wrap: wrap;
+  #filtres {
+    font-size: 30px;
   }
 
   /*Infromations*/
@@ -52,7 +67,7 @@
     display: flex;
     align-items: center;
     margin: 16px 0px 0px;
-    font-size: 19px;
+    font-size: 25px;
   }
   .informationsIcone {
     height: 32px;
@@ -80,17 +95,17 @@
 
   .hostingMain {
     grid-template-columns: repeat(3, 1fr);
-    width: auto;
+    width: 1400px;
   }
 
   .cardBody {
-    width: 300px;
-    height: 220px;
-    font-size: 19px;
+    width: 400px;
+    height: 265px;
+    font-size: 25px;
   }
 
   .cardImg {
-    width: 290px;
+    width: 490px;
   }
 
   /*Les plus populaires*/
@@ -111,7 +126,7 @@
   }
 
   .hebergementsPopulairesLiensDiv {
-    font-size: 18px;
+    font-size: 25px;
   }
 
   .hebergementsPopulairesImg {
@@ -133,15 +148,16 @@
   }
 
   .notes {
-    margin-top: 80px;
+    margin-top: 55px;
     margin-left: 20px;
   }
 
   /*Activites Marseille*/
 
   .activitesMarseille {
-    width: 1050px;
+    width: 1400px;
     margin-right: 120px;
+    font-size: 25px;
   }
 
   .activitesTitre {
@@ -153,6 +169,12 @@
   footer ul {
     justify-content: space-around;
   }
+  footer li {
+    font-size: 20px;
+  }
+  .titre1 {
+    font-size: 25px;
+  }
 }
 
 @media (max-width: 1100px) and (min-width: 768px) {
@@ -162,7 +184,6 @@
     row-gap: 32px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    font-size: 18px;
   }
 
   .cartesActivites1 {
