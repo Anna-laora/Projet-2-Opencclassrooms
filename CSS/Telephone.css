@@ -6,7 +6,7 @@
 
 /*pour Télephone*/
 
-@media all and (max-width: 767px) {
+@media (max-width: 767px) {
   html {
     width: fit-content;
   }
@@ -152,6 +152,9 @@
     padding-left: 100px;
     padding-right: 100px;
   }
+  .cardTitle {
+    width: 430px;
+  }
 
   #hebergements {
     margin-top: 10px;
@@ -163,6 +166,9 @@
     width: 450px;
     height: 250px;
     font-size: 25px;
+  }
+  .cardPrix2 {
+    margin-left: 0;
   }
 
   .cardImg {
@@ -188,24 +194,21 @@
     width: 1250px;
   }
 
-  .hebergementsPopulairesTitre {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 45px;
+  .hebergementsTitre {
+    width: 511px;
   }
 
   .hebergementsPopulaires {
     font-size: 25px;
     height: 160px;
   }
-
-  .cardPrix2 {
-    margin-left: -100px;
+  .hebergementsPopulairesImg {
+    width: 200px;
   }
 
   .notes {
-    margin-top: 50px;
-    margin-left: -100px;
+    margin-top: 20px;
+    margin-top: 45px;
   }
 
   /*activites marseille*/
@@ -287,7 +290,7 @@
     row-gap: 32px;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    width: 1300px;
+    width: 1250px;
   }
 
   .cartesActivites1 {
@@ -465,15 +468,15 @@
   .hebergementsPopulairesclass {
     width: 1040px;
     padding-bottom: 80px;
-    height: 800px;
-    row-gap: 50px;
+    height: 866px;
+    row-gap: 82px;
     padding-left: 30px;
     padding-right: 30px;
   }
 
   .hebergementsPopulaires {
     width: 950px;
-    height: fit-content;
+    height: 210px;
     font-size: 30px;
   }
 
